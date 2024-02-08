@@ -1,0 +1,58 @@
+[
+  {
+    "name": "MikeLegal",
+    "year": "2023 - Present",
+    "position": {
+      "Frontend Lead": "Feb, 2022 - Present",
+      "Senior Frontend Engineer": "Oct, 2021 - Jan, 2022"
+    },
+    "achievements": [
+      "Built the LongShot AI chrome extension that was featured as 2nd in Product of the Day at Product Hunt.",
+      "Collaborated with the Semrush team to integrate Semrush to LongShot.",
+      "Developed the real-time collaboration feature in the app using WebRTC."
+    ]
+  },
+  {
+    "name": "LongShot",
+    "year": "2021 - 23",
+    "position": {
+      "Frontend Lead": "Feb, 2022 - Present",
+      "Senior Frontend Engineer": "Oct, 2021 - Jan, 2022"
+    },
+    "achievements": [
+      "Built the LongShot AI chrome extension that was featured as 2nd in Product of the Day at Product Hunt.",
+      "Collaborated with the Semrush team to integrate Semrush to LongShot.",
+      "Developed the real-time collaboration feature in the app using WebRTC."
+    ]
+  },
+  {
+    "name": "Klinify",
+    "year": 2021,
+    "position": {
+      "Frontend Engineer": "May, 2021 - Oct, 2021"
+    },
+    "achievements": [
+      "Collaborated with Designers, building advanced UI for the platform. Developed new independent features from scratch"
+    ]
+  },
+  {
+    "name": "Capgemini",
+    "year": "2020 - 21",
+    "position": {
+      "React Developer": "Sep, 2020 - Apr, 2021"
+    },
+    "achievements": [
+      "Worked in multiple scalable projects, Inventory Management System(IMS) and Business Process tracker."
+    ]
+  },
+  {
+    "name": "Appato",
+    "year": "2018 - 19",
+    "position": {
+      "Frontend Intern": "Dec, 2018 - May, 2019"
+    },
+    "achievements": [
+      "Optimization of the existing code base and creating tests."
+    ]
+  }
+]

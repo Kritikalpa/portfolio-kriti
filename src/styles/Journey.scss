@@ -1,0 +1,87 @@
+@use "../variables" as v;
+
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2vh;
+  background-color: #4801ff;
+  min-height: 100vh;
+  padding: 5vw 4vw;
+  box-sizing: border-box;
+  perspective: 2500px;
+  perspective-origin: center left;
+  > .milestone {
+    position: relative;
+    top: -1500px;
+    &:first-child {
+      transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), top 1s ease-in 0.8s;
+    }
+    &:nth-child(2) {
+      transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), top 1s ease-in 0.6s;
+    }
+    &:nth-child(3) {
+      transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), top 1s ease-in 0.4s;
+    }
+    &:nth-child(4) {
+      transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), top 1s ease-in 0.2s;
+    }
+  }
+  &.is-journey-mounted {
+    > .milestone {
+      top: 0;
+    }
+  }
+}
+.milestone {
+  position: relative;
+  display: flex;
+  gap: 1vw;
+  font-weight: 900;
+  font-family: v.$primary-font;
+  font-size: 8vw;
+  letter-spacing: 0.02em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transform: rotateY(-55deg) translateZ(0) scale(1);
+  transform-origin: right center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 1.5s cubic-bezier(0.075, 0.82, 0.165, 1), top 1s ease-in;
+  &:hover {
+    transform: rotateY(-40deg) translateZ(0) scale(1);
+  }
+  > div {
+    &:first-child {
+      font-size: 1vw;
+      font-weight: 800;
+      font-family: v.$secondery-font;
+      // position: absolute;
+      // top: 1.7em;
+      //   left: -50px;
+      letter-spacing: 0;
+      line-height: 1;
+      margin-top: 1.2vh;
+    }
+    &:nth-child(2) {
+      font-weight: 300;
+      font-family: v.$secondery-font;
+    }
+    &:last-child {
+      margin-top: 1vh;
+      text-align: end;
+      transition: color 0.5s;
+      &:hover {
+        color: transparent;
+      }
+    }
+  }
+}
+
+@supports (-webkit-text-stroke: 3px v.$black) or (text-stroke: 3px v.$black) {
+  .milestone > div:last-child {
+    -webkit-text-stroke: 3px v.$black;
+  }
+}

@@ -1,0 +1,75 @@
+@use "../variables" as v;
+
+.overview {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  padding: 3vw 4vw;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10000;
+}
+.overview-name {
+  font-family: v.$primary-font;
+  color: v.$white;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+  transform: scale(1, 0);
+  transition: transform 0.2s ease-out, color 0.5s;
+  &.is-mounted{
+    transform: scale(1, 1);
+  }
+  &:hover{
+    cursor: pointer;
+    color: transparent;
+  }
+}
+.overview-details {
+  color: v.$white;
+  font-size: 14px;
+  font-family: v.$secondery-font;
+  line-height: 1.5;
+  display: flex;
+  gap: 3vw;
+  .overview-location {
+    > div {
+      &:nth-child(2) {
+        font-weight: 600;
+        font-size: 13px;
+      }
+    }
+  }
+}
+.overview-links {
+  line-height: 1.5;
+  color: v.$white;
+  margin-left: 3vw;
+  .overview-links-item {
+    display: flex;
+    font-size: 14px;
+    gap: 1vw;
+    align-items: center;
+    cursor: pointer;
+    > div {
+      &:first-child {
+        font-size: 12px;
+      }
+      &:last-child {
+        font-weight: 600;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@supports (-webkit-text-stroke: 1px v.$black) or (text-stroke: 1px v.$black) {
+  .overview-name {
+    -webkit-text-stroke: 1px v.$white;
+  }
+}
