@@ -19,7 +19,7 @@ function OverviewText() {
       <div className="overview-details">
         <div>
           <div>Frontend Developer</div>
-          <div>5+ Years Experience</div>
+          <div>6 Years Experience</div>
         </div>
         <div className="overview-location">
           <div>Tripura, INDIA</div>

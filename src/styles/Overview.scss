@@ -2,12 +2,13 @@
 
 .overview {
   display: flex;
-  height: 100%;
+  // height: 100%;
   align-items: flex-end;
   padding: 3vw 4vw;
   box-sizing: border-box;
   position: fixed;
   z-index: 10000;
+  bottom: 0;
 }
 .overview-name {
   font-family: v.$primary-font;
